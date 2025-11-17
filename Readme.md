@@ -117,12 +117,12 @@ All models achieved perfect classification metrics on the test set:
 - Best for broad structural abnormalities
 <img width="603" height="300" alt="image" src="https://github.com/user-attachments/assets/2e037f6f-1550-4bd6-a931-0246322752ab" />
 
-**XGradCAM** - Comprehensive Gradient Aggregation
+**FullGradCAM** - Comprehensive Gradient Aggregation
 - Most thorough explanation approach
 - Aggregates gradients across all layers
 - Ideal for complex, multi-factor diagnoses
 - Higher computational requirements
-<img width="597" height="310" alt="image" src="https://github.com/user-attachments/assets/e8dcd019-3ac2-4cae-bb04-91a36a483d6b" />
+<img width="596" height="327" alt="image" src="https://github.com/user-attachments/assets/e7203b28-1374-4176-a7f6-b31fefc4699c" />
 
 
 **XGradCAM & ThresholdCAM** - Advanced Filtering Techniques

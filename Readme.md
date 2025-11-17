@@ -1,16 +1,12 @@
 # PCOS Detection Using XAI: A Transparent Approach
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Python](https://img.shields.io/badge/python-3.8%2B-blue)](https://www.python.org/)
-[![TensorFlow](https://img.shields.io/badge/tensorflow-2.x-orange)](https://www.tensorflow.org/)
-
 AI-powered PCOS detection system using deep learning and explainable AI for transparent, real-time diagnosis from ultrasound images.
 
-## 📋 Overview
+## Overview
 
 PCOS affects millions of women and can lead to infertility, insulin resistance, diabetes, and other complications. Early detection is critical. This project combines three advanced deep learning models (DenseNet201, InceptionV3, EfficientNetV2) achieving **100% accuracy** with seven XAI techniques to provide transparent, interpretable diagnoses. Every prediction includes visual heatmaps explaining which image regions influenced the diagnosis, enabling clinicians to trust and understand AI decisions.
 
-## ✨ Features
+## Features
 
 - **High Accuracy Models**: DenseNet201, InceptionV3, and EfficientNetV2 architectures achieving perfect classification
 - **Explainable AI Integration**: Multiple XAI techniques (GradCAM, ScoreCAM, LayerCAM, EigenCAM, and more)
@@ -18,7 +14,7 @@ PCOS affects millions of women and can lead to infertility, insulin resistance, 
 - **Medical-Grade Interface**: Support for patient health data (blood group, blood pressure, allergies)
 - **Flexible Image Support**: JPG, PNG, and SVG formats up to 10 MB
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Python 3.8+
@@ -57,7 +53,7 @@ npm start
 3. **Access the Application**
 Navigate to `http://localhost:3000` in your browser
 
-## 📊 Model Performance
+## Model Performance
 
 All models achieved perfect classification metrics on the test set:
 
@@ -69,7 +65,7 @@ All models achieved perfect classification metrics on the test set:
 
 **Test Set Size**: 386 images (157 infected, 229 non-infected)
 
-## 🧠 Model Architecture
+## Model Architecture
 
 ### Deep Learning Models
 - **DenseNet201**: Dense connections for efficient feature extraction
@@ -87,7 +83,7 @@ All models achieved perfect classification metrics on the test set:
 | Dropout | 0.6 |
 | Early Stopping | Yes (Patience: 5) |
 
-## 🔍 Explainable AI Methods
+## Explainable AI Methods
 
 ### Supported XAI Techniques
 
@@ -96,36 +92,50 @@ All models achieved perfect classification metrics on the test set:
 - Creates heatmaps from last convolutional layer gradients
 - Good for identifying general areas of abnormality
 
+<img width="603" height="327" alt="image" src="https://github.com/user-attachments/assets/8d30e750-b95c-480d-99e7-384bfa96c5b7" />
+
+
 **ScoreCAM** - Score-based Class Activation Mapping
 - Improved precision over GradCAM
 - Uses model predictions rather than gradients
 - Better at isolating specific cystic regions
 - Slightly higher computational cost
+- 
+<img width="588" height="292" alt="image" src="https://github.com/user-attachments/assets/6f168b55-d9ce-4ebb-a621-47adab95598d" />
 
 **LayerCAM** - Multi-layer Activation Mapping
 - Considers multiple network layers
 - Captures details from different analysis levels
 - Ideal for fine-grained abnormality detection
 - Higher computational complexity
+<img width="601" height="302" alt="image" src="https://github.com/user-attachments/assets/7f30200f-aa92-4a76-9888-8abed1a893e7" />
 
 **EigenCAM** - PCA-based Activation Mapping
 - Fast, backpropagation-free approach
 - Captures dominant patterns and features
 - Excellent for real-time applications
 - Best for broad structural abnormalities
+<img width="603" height="300" alt="image" src="https://github.com/user-attachments/assets/2e037f6f-1550-4bd6-a931-0246322752ab" />
 
-**FullGradCAM** - Comprehensive Gradient Aggregation
+**XGradCAM** - Comprehensive Gradient Aggregation
 - Most thorough explanation approach
 - Aggregates gradients across all layers
 - Ideal for complex, multi-factor diagnoses
 - Higher computational requirements
+<img width="597" height="310" alt="image" src="https://github.com/user-attachments/assets/e8dcd019-3ac2-4cae-bb04-91a36a483d6b" />
+
 
 **XGradCAM & ThresholdCAM** - Advanced Filtering Techniques
 - Enhanced gradient scaling and threshold-based filtering
 - Improved clarity and focus on relevant regions
 - Flexible for different diagnostic needs
 
-## 💻 Application Workflow
+<img width="597" height="305" alt="image" src="https://github.com/user-attachments/assets/e7184bd4-9e2b-4313-98b9-877d6452ec72" />
+
+<img width="590" height="299" alt="image" src="https://github.com/user-attachments/assets/de24b1cd-6b92-45ab-8753-2eadae09238c" />
+
+
+## Application Workflow
 
 1. **Patient Information**: Enter health details (blood group, blood pressure, allergies)
 2. **Image Upload**: Submit ultrasound image (JPG, PNG, SVG; ≤10 MB)
@@ -133,7 +143,7 @@ All models achieved perfect classification metrics on the test set:
 4. **Analysis**: Deep learning model processes image with XAI interpretation
 5. **Results**: Display diagnosis with EigenCAM heatmap visualization
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 pcos-xai-detection/
@@ -155,50 +165,23 @@ pcos-xai-detection/
 └── README.md
 ```
 
-## 📚 Dataset
+## Dataset
 
 Dataset: [PCOS Detection Using Ultrasound Images](https://www.kaggle.com/datasets/anaghachoudhari/pcos-detection-using-ultrasound-images)
 
 The dataset contains labeled ultrasound images categorized as infected and non-infected samples.
 
-## 🔬 Key Research References
+## Key Research References
 
 - DenseNet Architecture: [arxiv.org/abs/1608.06993](https://arxiv.org/abs/1608.06993)
 - Explainable AI Methods: [arxiv.org/abs/2010.11982](https://arxiv.org/abs/2010.11982)
 - GradCAM: [arxiv.org/abs/1610.02391](https://arxiv.org/abs/1610.02391)
 - ScoreCAM: [arxiv.org/abs/1910.01279](https://arxiv.org/abs/1910.01279)
 
-## 🏥 Clinical Applications
+## Clinical Applications
 
 This system is designed for:
 - Supporting diagnostic workflows in ultrasound clinics
 - Training medical professionals in PCOS identification
 - Reducing diagnostic time and improving consistency
 - Building trust through transparent AI interpretability
-
-## ⚖️ Disclaimer
-
-This tool is designed as a **diagnostic aid only** and should not replace professional medical judgment. Always consult with qualified healthcare professionals for medical diagnosis and treatment decisions.
-
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
-
-## 📧 Contact & Support
-
-For questions, issues, or suggestions, please open an issue on GitHub or contact the project maintainers.
-
-## 🙏 Acknowledgments
-
-- Kaggle for the PCOS ultrasound dataset
-- TensorFlow/Keras team for deep learning frameworks
-- XAI research community for explainability methods
-- All contributors and supporters of this project
-
----
-
-⭐ If you find this project helpful, please consider giving it a star!

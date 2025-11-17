@@ -20,45 +20,6 @@ Every prediction includes visual heatmaps explaining which image regions influen
 - **Real-Time Diagnosis**: Flask backend with React frontend for seamless user experience
 - **Medical-Grade Interface**: Support for patient health data (blood group, blood pressure, allergies)
 
-## Quick Start
-
-### Prerequisites
-- Python 3.8+
-- TensorFlow/Keras
-- Flask
-- React.js
-
-### Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/pcos-xai-detection.git
-cd pcos-xai-detection
-
-# Install Python dependencies
-pip install -r requirements.txt
-
-# Install frontend dependencies
-cd frontend
-npm install
-```
-
-### Usage
-
-1. **Start the Backend Server**
-```bash
-python app.py
-```
-
-2. **Start the Frontend Application**
-```bash
-cd frontend
-npm start
-```
-
-3. **Access the Application**
-Navigate to `http://localhost:3000` in your browser
-
 ## Model Performance
 
 All models achieved perfect classification metrics on the test set:
@@ -151,28 +112,6 @@ All models achieved perfect classification metrics on the test set:
 3. **Validation**: System verifies successful image import
 4. **Analysis**: Deep learning model processes image with XAI interpretation
 5. **Results**: Display diagnosis with EigenCAM heatmap visualization
-
-## Project Structure
-
-```
-pcos-xai-detection/
-├── models/
-│   ├── densenet201_model.h5
-│   ├── inceptionv3_model.h5
-│   └── efficientnetv2_model.h5
-├── xai/
-│   ├── gradcam.py
-│   ├── scorecam.py
-│   ├── layercam.py
-│   └── eigencam.py
-├── frontend/
-│   ├── src/
-│   ├── public/
-│   └── package.json
-├── app.py
-├── requirements.txt
-└── README.md
-```
 
 ## Dataset
 

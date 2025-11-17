@@ -12,7 +12,6 @@ PCOS affects millions of women and can lead to infertility, insulin resistance, 
 - **Explainable AI Integration**: Multiple XAI techniques (GradCAM, ScoreCAM, LayerCAM, EigenCAM, and more)
 - **Real-Time Diagnosis**: Flask backend with React frontend for seamless user experience
 - **Medical-Grade Interface**: Support for patient health data (blood group, blood pressure, allergies)
-- **Flexible Image Support**: JPG, PNG, and SVG formats up to 10 MB
 
 ## Quick Start
 

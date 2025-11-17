@@ -5,6 +5,8 @@ AI-powered PCOS detection system using deep learning and explainable AI for tran
 ## Overview
 
 PCOS affects millions of women and can lead to infertility, insulin resistance, diabetes, and other complications. Early detection is critical. This project combines three advanced deep learning models (DenseNet201, InceptionV3, EfficientNetV2) achieving **100% accuracy** with seven XAI techniques to provide transparent, interpretable diagnoses. Every prediction includes visual heatmaps explaining which image regions influenced the diagnosis, enabling clinicians to trust and understand AI decisions.
+<img width="630" height="263" alt="image" src="https://github.com/user-attachments/assets/7efd0beb-2cab-46b1-9257-b5c29cd58938" />
+
 
 ## Features
 
